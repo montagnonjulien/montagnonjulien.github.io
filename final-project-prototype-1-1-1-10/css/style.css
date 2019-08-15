@@ -1,0 +1,97 @@
+/*Stylesheet Final project Julien 2019*/
+
+/*
+Reset
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+/*
+Layout
+*/
+h1 {
+    text-align: center;
+
+}
+
+h2,h3,h4,
+p,
+nav ul {
+    padding-left: 20px;
+    margin-bottom: 1em;
+}
+
+footer {
+    padding: 1em 0 1em 0;
+}
+
+nav.main-navigation {
+    
+}
+
+/*
+Navigation
+*/
+
+nav.main-navigation {
+    text-transform: uppercase;
+    color: gainsboro;
+}
+
+nav.main-navigation ul {
+    text-align: center
+}
+
+nav.main-navigation ul li {
+    display: inline-block;
+} 
+
+nav.main-navigation ul li a {
+    text-decoration: none;
+    color: rgb(0,0,0);
+      
+}
+
+nav.main-navigation ul li a.hover {
+    color: white;
+}
+/*
+Colors and style
+*/
+
+body {
+    background-color: darkgrey
+}
+
+header {
+    background-color: gray
+}
+
+footer {
+    background-color: black;
+    color: gray;
+}
+
+/*
+Typographie
+*/
+
+body {
+    font-family: 'Source Code Pro', Arial, monospace;
+        }
+    
+p {
+    line-height: 1,5em;
+    }
+        
+    
+
+

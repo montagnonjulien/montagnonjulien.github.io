@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+    <head>
+        <title>Julien Montagnon's final project/Home</title>
+        
+        <link rel="stylesheet" href="css/style.css">
+        
+        <style>
+            /*--mobile css----------------------------------------------*/
+            #desktop-nav {
+                display: none;
+                
+            }
+            
+            body {
+                font-size: 1,5em;
+                padding-top: 13vw;
+                
+            }
+            
+            #mobile-nav {
+                display: none;
+                list-style-type: none;
+                font-size: 1,5em;
+                background-color: black;
+        
+            }
+            
+            
+                
+            nav a {
+                color: black;
+                background-color: black;
+            }
+            
+            nav a:hover {
+                color: red;
+                background-color: red;
+        } 
+            
+            #burger-icon  {
+                width: 40px;
+                height: 40px;
+                background-color: red;
+             }
+            
+            #burger-icon:hover {
+                cursor: pointer;
+                background-color: chartreuse;
+            }
+            
+            #mobile-nav {
+                position: fixed;
+                width: 100%;
+                top: 0;
+                height: 40px;  /*Here's the magic: try and set the value to 195px*/
+                padding-top: 5px;
+                overflow-y: hidden;
+                background-color: black;
+                
+            }
+            
+            #mobile-nav ul {
+                margin-top: 11px;
+            }
+            
+            #desktop-nav ul,        
+                h1,h2,h3,
+                p {
+                   padding: 0 20px;         
+            }
+            
+            /*responsive design, desktop css--------------------------------------------*/
+            @media only screen and (min-width: 600px) {
+                body {
+                    font-size: 1em;
+                }
+                
+                #desktop-nav {    
+                display: block;
+                
+            }
+
+                
+                #mobile-nav {    
+                    display: none;
+                }
+                
+                nav, ul {
+                    display: inline-block;
+                }
+                
+                #burger-icon {
+                    display: none;
+                }
+                
+                #desktop-nav ul,        
+                    h1,h2,h3,
+                    p {
+                        padding: 0 10vw;         
+                    }
+
+            } 
+                
+            
+            
+        
+        
+        
+        </style>
+        
+        <script>
+            function toggleMobileNav() {    
+            var x = document.getElementById("mobile-nav");
+            if (x.style.height === "195px") {
+            x.style.height = "40px";
+            } else {
+            x.style.height = "195px";
+             }
+            }
+        </script>
+   
+    </head>
+
+    <body>
+
+        <header>
+            <h1>Julien's final project</h1>
+            
+                <div id="burger-icon" onclick="toggleMobileNav()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            
+            <nav id="mobile-nav">
+             
+
+                
+              <ul>
+                 <li><a href="#" onclick="document.getElementById('mobile-nav').style.height= '40px'">Intro</a></li>
+                 <li><a href="professionnal-experiences.html" onclick="document.getElementById('mobile-nav').style.height= '40px'">Pro</a></li>
+                 <li><a href="#" onclick="document.getElementById('mobile-nav').style.height= '40px'">Hobbies</a></li>
+                 <li><a href="#" onclick="document.getElementById('mobile-nav').style.height= '40px'">Contact</a></li>
+             </ul>               
+            </nav>
+            
+            <nav id="desktop-nav">
+              <ul>
+                 <li><a href="#">a little introduction</a></li>
+                 <li><a href="professionnal-experiences.html">Skills and professional experiences</a></li>
+                 <li><a href="#">hobbies and activities</a></li>
+                 <li><a href="#">Contact</a></li>
+              </ul>
+            </nav>
+        </header>
+
+        <section>
+            <h2></h2>
+            <p></p>
+            <article>
+                <h3></h3>
+                
+                <p>
+                   
+                </p>
+                
+            </article>
+
+
+        </section>
+        
+        <aside>
+            <h4></h4>
+            
+            <p>
+                
+            </p>
+            
+        </aside>
+
+        <footer>
+           <p>
+            
+           </p> 
+
+        </footer>
+
+    </body>
+
+
+</html>

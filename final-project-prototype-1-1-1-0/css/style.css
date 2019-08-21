@@ -14,9 +14,13 @@ nav ul {
     list-style-type: none;
 }
 
+
+
 /*
 Layout
 */
+
+
 h1,h2 {
     text-align: center;
 
@@ -42,28 +46,63 @@ nav.main-navigation {
 Navigation
 */
 
-nav.main-navigation {
+nav#main-navigation {
     text-transform: uppercase;
     color: gainsboro;
 }
 
-nav.main-navigation ul {
+nav#main-navigation ul {
     text-align: center
 }
 
-nav.main-navigation ul li {
+nav#main-navigation ul li {
     display: inline-block;
 } 
 
-nav.main-navigation ul li a {
+nav#main-navigation ul li a {
     text-decoration: none;
     color: darkgrey;
 }
 
-nav.main-navigation ul li a:hover {
+nav#main-navigation ul li a:hover {
     color: red;
 }
 
+nav#mobile-navigation {
+    text-transform: uppercase;
+    color: gainsboro;
+}
+
+nav#mobile-navigation ul li a:hover {
+    color: red;
+}
+
+nav#mobile-navigation ul li a {
+    text-decoration: none;
+    color: darkgrey;
+    font-size: 2.7em;
+}
+
+#main-navigation {
+            display: none;
+        }
+        
+        #mobile-navigation {
+            margin-bottom:-20px
+        }
+        
+        
+        @media only screen and (min-width: 600px) {
+            
+            #main-navigation {
+                display: block;
+                margin-bottom:-20px
+            }
+            
+            #mobile-navigation {
+                display: none;
+            }
+        }
 /*
 Colors and style
 */

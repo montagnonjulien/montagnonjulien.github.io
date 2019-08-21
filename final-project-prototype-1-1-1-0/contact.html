@@ -15,8 +15,11 @@
     
         div, p {
             display: block;
-            align-content: center;
+            width: auto;
         }
+        
+        
+            
     
     </style>
     
@@ -28,10 +31,21 @@
        <header>
        <h1>JULIEN MONTAGNON's final project</h1>
        
+       
+        <nav id="mobile-navigation">
+             <ul>
+                 <li><a href="#">Home</a></li>
+                 <li><a href="professionnal-experiences.html">Studies and professional experiences</a></li>
+                 <li><a href="hobbies.html">hobbies and activities</a></li>
+                 <li><a href="contact.html">Contact</a></li>
+             </ul>
+             
+        </nav>
+       
        <nav class="main-navigation">
              <ul>
-                <li><a href="#">Home</a></li>
-                 <li><a href="professionnal-experiences.html">Skills and professional experiences</a></li>
+                <li><a href="index.html">Home</a></li>
+                 <li><a href="professionnal-experiences.html">Studies and professional experiences</a></li>
                  <li><a href="hobbies.html">hobbies and activities</a></li>
                  <li><a href="contact.html">Contact</a></li>
              </ul>
@@ -62,5 +76,20 @@
         <button type="button" onclick="document.getElementById('twit').innerHTML = 'Are you kidding me?!'">Click here!</button>
         
         </div>
+        
+        <h2>Newsletter</h2>
+        
+        <form action="/action_page.php">
+          First name:<br>
+          <input type="text" name="firstname" value="">
+          <br>
+          Last name:<br>
+          <input type="text" name="lastname" value=""><br>
+          Email:<br>
+          <input type="text" name="email" value="">
+          <br><br>
+          <input type="submit" value="Send">
+        </form>
+        
        
    </body>

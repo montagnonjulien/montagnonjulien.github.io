@@ -12,11 +12,34 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:300,600&display=swap" rel="stylesheet">
     
     <style>
-        h2 {
-            text-align: center;
+        
+        
+        img {
+            width:100%;
+            margin-top: 0;
+        }
+        
+    
+        #main-navigation {
+            display: none;
+        }
+        
+        #mobile-navigation {
+            margin-bottom:-20px
         }
         
         
+        @media only screen and (min-width: 600px) {
+            
+            #main-navigation {
+                display: block;
+                margin-bottom:-20px
+            }
+            
+            #mobile-navigation {
+                display: none;
+            }
+        }
         
         
         
@@ -28,12 +51,23 @@
 
 <body>
     <header>
-       <h1>JULIEN MONTAGNON's final project</h1>
+       <h1>JULIEN MONTAGNON</h1>
        
-       <nav class="main-navigation">
+       <nav id="mobile-navigation">
              <ul>
                  <li><a href="#">Home</a></li>
-                 <li><a href="professionnal-experiences.html">Skills and professional experiences</a></li>
+                 <li><a href="professionnal-experiences.html">Studies and professional experiences</a></li>
+                 <li><a href="hobbies.html">hobbies and activities</a></li>
+                 <li><a href="contact.html">Contact</a></li>
+             </ul>
+             
+        </nav>
+       
+       
+       <nav id="main-navigation">
+             <ul>
+                 <li><a href="#">Home</a></li>
+                 <li><a href="professionnal-experiences.html">Studies and professional experiences</a></li>
                  <li><a href="hobbies.html">hobbies and activities</a></li>
                  <li><a href="contact.html">Contact</a></li>
              </ul>
@@ -42,8 +76,8 @@
         
     </header>
     
- <div></div>
-    
+               
+                <img class ="displayed" src="img/12512253_10153581101521417_4463324432777868888_n.jpg" alt="portrait of a man" href="contact.html">
     
                 <h2>WILLKOMMEN, BIENVENU, WELCOME</h2>
                 <p>
@@ -51,7 +85,7 @@
                 </p>
                 
             
-            <img class ="displayed" src="img/12512253_10153581101521417_4463324432777868888_n.jpg" alt="portrait of a man" href="contact.html">
+            
 
             
             

@@ -32,12 +32,13 @@
             
                 
             nav a {
-                color: black;
+                color: white;
                 background-color: black;
+                text-decoration: none;
             }
             
             nav a:hover {
-                color: red;
+                color: white;
                 background-color: red;
         } 
             
@@ -81,6 +82,8 @@
                 
                 #desktop-nav {    
                 display: block;
+                    
+                    
                 
             }
 
@@ -91,6 +94,7 @@
                 
                 nav, ul {
                     display: inline-block;
+                    
                 }
                 
                 #burger-icon {
@@ -100,7 +104,8 @@
                 #desktop-nav ul,        
                     h1,h2,h3,
                     p {
-                        padding: 0 10vw;         
+                        padding: 0 10vw; 
+                        
                     }
 
             } 
@@ -130,23 +135,21 @@
         <header>
             <h1>Julien's final project</h1>
             
-                <div id="burger-icon" onclick="toggleMobileNav()">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-            
-            <nav id="mobile-nav">
-             
+        <nav id="mobile-nav">
 
-                
-              <ul>
-                 <li><a href="#" onclick="document.getElementById('mobile-nav').style.height= '40px'">Intro</a></li>
-                 <li><a href="professionnal-experiences.html" onclick="document.getElementById('mobile-nav').style.height= '40px'">Pro</a></li>
-                 <li><a href="#" onclick="document.getElementById('mobile-nav').style.height= '40px'">Hobbies</a></li>
-                 <li><a href="#" onclick="document.getElementById('mobile-nav').style.height= '40px'">Contact</a></li>
-             </ul>               
-            </nav>
+            <div id="burger-icon" onclick="toggleMobileNav()">
+                <div></div>
+                <div></div>                
+                <div></div>             
+            </div>
+   
+            <ul>
+            <li><a href="#" onclick="document.getElementById('mobile-nav').style.height= '40px'">Top</a></li>
+            <li><a href="#section1" onclick="document.getElementById('mobile-nav').style.height= '40px'">Section 1</a></li>   
+            <li><a href="#section2" onclick="document.getElementById('mobile-nav').style.height= '40px'">Section 2</a></li>  
+            <li><a href="#section3" onclick="document.getElementById('mobile-nav').style.height= '40px'">Section 3</a></li>  
+            </ul>    
+        </nav>
             
             <nav id="desktop-nav">
               <ul>

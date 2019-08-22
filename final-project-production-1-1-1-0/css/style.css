@@ -34,16 +34,16 @@ h2,h3,h4,p,nav ul {
     margin-bottom: 1em;
 }
 
-}
+
 #section-3 {
     color: darkred;
-    font-size: 5em;
+    font-size: 2.5em;
 }
 
 img {
     width: 70%;
     float: center;
-    margin: 0 50px 0 200px;
+    margin: 0 50px 0 100px;
 }
 
 table, tr, td, th {

@@ -3,7 +3,6 @@
 
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,600&display=swap');
 
-
 /*
 Reset
 */
@@ -40,23 +39,24 @@ h2,h3,h4,p,nav ul {
     font-size: 2.5em;
 }
 
-img {
+a img {
+    float: inherit;
+    object-position: center;
     width: 70%;
-    float: center;
     margin: 0 50px 0 100px;
 }
 
 table, tr, td, th {
-          width: 100%;
-          border: 2px solid black;
-          border-collapse: collapse;
-          text-align: center;
-          
-        }
+    border: 3px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 10px;
+}
 
-th, td {
-          padding: 10px;
-        }
+table {
+    width: 100%;
+}
+
 
 th {
     color: darkred;
@@ -116,6 +116,7 @@ nav.mobile-nav ul li a {
                 text-decoration: none;
                 color: darkgrey;
                 font-size: 1.5em;
+                margin: 0 10px;
             }
 
             nav.main-nav ul li a:hover {
